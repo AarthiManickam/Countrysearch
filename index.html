@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Country search</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    
+</head>
+<body onload="tablevisible();">
+    <div id="container">
+    <input type="button" onclick="fetchdata()" value="CountryTable"/>
+    
+    <table id="showData" >
+        <thead>
+            <tr>
+                <th  >Name 
+                    <span style="float:right" class="fa fa-sort-asc" 
+                    onclick="sortAndRender(event)" ></span>
+                    
+                </th>
+                <th >Capital
+                    <span style="float:right" class="fa fa-sort-asc"  onclick="sortAndRender(event)"
+                   ></span>
+                </th>
+                <!-- <th>flag</th> -->
+            </tr>
+        </thead>
+        
+        
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
